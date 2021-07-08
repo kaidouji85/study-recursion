@@ -1,5 +1,5 @@
 /** 集合 */
-const list = [1,2,3];
+const list = [1, 2, 2, 3];
 
 /**
  * 部分集合を求める
@@ -20,4 +20,5 @@ function test(subsets, data) {
   return test(updatedSubsets, remainingData);
 }
 
-test([], list);
+const result = test([], list);
+console.log(result);
