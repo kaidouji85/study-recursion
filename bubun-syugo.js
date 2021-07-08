@@ -14,10 +14,10 @@ function test(subsets, data) {
   }
 
   const top = data[0];
-  const addTopToExistSubsetMember = subsets.map(v => [...v, top]);
-  const totalSubset = [...subsets, [top], ...addTopToExistSubsetMember]
+  const addTopToSubsets = subsets.map(v => [...v, top]);
+  const updatedSubsets = [...subsets, [top], ...addTopToSubsets]
   const remainingData = data.slice(1);
-  return test(totalSubset, remainingData);
+  return test(updatedSubsets, remainingData);
 }
 
 test([], list);
