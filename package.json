@@ -1,0 +1,11 @@
+{
+  "name": "study-recursion",
+  "version": "1.0.0",
+  "description": "再帰呼び出しの勉強で、プログラムを書きました。",
+  "main": "subsets.js",
+  "scripts": {
+    "start": "node subsets.js"
+  },
+  "author": "Y.Takeuchi",
+  "license": "ISC"
+}
